@@ -11,19 +11,14 @@
   margin-top: 3.2rem;
   position: relative;
   isolation: isolate;
-  padding: 9.5rem 40rem;
+  overflow: hidden;
+  padding: 9.5rem 4rem;
 
-  &::before {
-    content: url(../../static/img/start.svg);
-    width: fit-content;
-    width: -moz-fit-content;
-    height: fit-content;
-    height: -moz-fit-content;
-    position: absolute;
-    bottom: -2em;
-    left: 0;
-    right: 0;
-    margin: auto;
+  @media screen and (max-width: 475px) {
+    padding: 9.5rem 1rem;
+  }
+  @media screen and (max-width: 413px) {
+    padding: 9.5rem 0rem;
   }
 
   #leftimage,
@@ -38,9 +33,34 @@
 
   #leftimage {
     left: 0;
+
+    @media screen and (max-width: 1097px) {
+      left: -5em;
+    }
+    @media screen and (max-width: 875px) {
+      left: -13em;
+    }
+    @media screen and (max-width: 528px) {
+      left: -10em;
+    }
+    @media screen and (max-width: 425px) {
+      left: -7em;
+    }
   }
   #rightimage {
     right: 0;
+    @media screen and (max-width: 1097px) {
+      right: -5em;
+    }
+    @media screen and (max-width: 875px) {
+      right: -13em;
+    }
+    @media screen and (max-width: 528px) {
+      right: -10em;
+    }
+    @media screen and (max-width: 425px) {
+      right: -7em;
+    }
   }
 }
 
@@ -58,10 +78,6 @@
 }
 
 h1 {
-  background: white;
-  white-space: nowrap;
-  text-align: center;
-  padding: 2.4rem 3rem;
   font-size: 4.9rem;
   font-weight: var.$heavy;
   font-style: italic;
@@ -69,10 +85,22 @@ h1 {
   width: fit-content;
   width: -moz-fit-content;
   transform: rotate(-3deg);
-  box-shadow: -15px 15px 0px black;
+  text-align: center;
+  span {
+    background: white;
+    box-shadow: -15px 15px 0px black;
+    padding: 2.4rem 3rem;
+    line-height: 3.5;
+  }
 
-  &:last-of-type {
-    margin-top: 2.6rem;
+  @media screen and (max-width: 1161px) {
+    font-size: 4.2rem;
+  }
+  @media screen and (max-width: 1016px) {
+    font-size: 3.9rem;
+  }
+  @media screen and (max-width: 954px) {
+    font-size: 3.5rem;
   }
 }
 
@@ -84,9 +112,16 @@ h1 {
   font-size: 3.2rem;
   transform: rotate(-3deg);
 
+  @media screen and (max-width: 875px) {
+    flex-direction: column;
+  }
+
   li:not(:last-of-type)::after {
     content: '-';
     margin-inline: 0.2em;
+    @media screen and (max-width: 875px) {
+      display: none;
+    }
   }
 }
 
@@ -104,6 +139,12 @@ header {
     text-decoration: none;
     padding: 2rem 3.6rem;
     border-radius: 40px;
+    @media screen and (max-width: 572px) {
+      font-size: 2.6rem;
+    }
+    @media screen and (max-width: 516px) {
+      font-size: 2.3rem;
+    }
   }
 
   p {

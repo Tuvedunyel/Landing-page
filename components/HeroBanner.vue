@@ -17,8 +17,8 @@
         class="logo"
       />
       <div class="title-container">
-        <h1>Vous souhaitez faire un point sur vos actions</h1>
-        <h1>Et améliorer votre communication ?</h1>
+        <h1><span>Vous souhaitez faire un point sur vos actions</span></h1>
+        <h1><span>Et améliorer votre communication ?</span></h1>
         <ul class="competences">
           <li>Stratégie</li>
           <li>Marketing</li>
