@@ -2,7 +2,17 @@
   <header>
     <div class="container">
       <img
-        src="../static/img/logo.svg"
+        src="../static/img/blackbullet-right.png"
+        alt="background-image"
+        id="leftimage"
+      />
+      <img
+        src="../static/img/blackbullet-left.png"
+        alt="background-image"
+        id="rightimage"
+      />
+      <img
+        src="../static/img/logodeux.svg"
         alt="Logo de BTG Communication"
         class="logo"
       />
@@ -18,11 +28,11 @@
           <li>Web</li>
           <li>Vidéo</li>
         </ul>
-        <a href="#audit"
-          >Programmer mon audit <span class="yellow">offert</span></a
-        >
-        <p>Valeur : 800€ ht</p>
       </div>
+      <a href="#audit"
+        >Programmer mon audit <span class="yellow">offert</span></a
+      >
+      <p>Valeur : 800€ ht</p>
     </div>
   </header>
 </template>
