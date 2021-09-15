@@ -1,7 +1,11 @@
 @use '../abstract' as var;
 
+.no-start.container-narrow {
+  width: 95%;
+}
 .no-start.container-narrow::before {
   display: none;
+  overflow: hidden;
 }
 
 .offrons {
@@ -16,18 +20,42 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 647px) {
+    padding: 4.3rem 2.5rem;
+  }
+
+  @media screen and (max-width: 1352px) {
+    max-width: 100%;
+  }
+
   .left-image,
   .right-image {
     position: absolute;
     z-index: -1;
     height: 100%;
+
+    @media screen and (max-width: 965px) {
+      display: none;
+    }
   }
   .left-image {
     left: -14.3em;
+    @media screen and (max-width: 1317px) {
+      left: -9.3em;
+    }
+    @media screen and (max-width: 1097px) {
+      left: -6.3em;
+    }
   }
 
   .right-image {
     right: -14.3em;
+    @media screen and (max-width: 1317px) {
+      right: -9.3em;
+    }
+    @media screen and (max-width: 1097px) {
+      right: -6.3em;
+    }
   }
 }
 
@@ -43,10 +71,28 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 489px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 726px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 335px) {
+      font-size: 2.3rem;
+    }
+
     &::before {
       content: url(../../static/img/star-little.svg);
       margin-right: 2rem;
       line-height: 0;
+      @media screen and (max-width: 489px) {
+        margin-right: 0;
+        margin-bottom: 1em;
+        transform: scale(1.5);
+      }
     }
   }
 }
@@ -70,10 +116,22 @@
   &:first-of-type {
     top: -7%;
     left: -14%;
+
+    @media screen and (max-width: 913px) {
+      top: -11%;
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      width: fit-content;
+      width: -moz-fit-content;
+    }
   }
   &:last-of-type {
     bottom: -7;
     right: -14%;
+    @media screen and (max-width: 913px) {
+      right: 3%;
+    }
   }
 }
 
@@ -85,5 +143,33 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 4.6rem !important;
+
+    @media screen and (max-width: 1337px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 4.5rem;
+
+      li {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+
+    @media screen and (max-width: 828px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      li {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+    @media screen and (max-width: 467px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      li {
+        align-self: center;
+        justify-self: center;
+      }
+    }
   }
 }
