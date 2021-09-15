@@ -129,7 +129,7 @@ export default {
 
         axios({
           method: 'post',
-          url: 'http://btg-communication.local/wp-json/contact-form-7/v1/contact-forms/1460/feedback',
+          url: 'https://btg-dev.com/btg-audit/wp-json/contact-form-7/v1/contact-forms/5/feedback',
           data: bodyFormData,
           config: { headers: { 'Content-Type': 'multipart/form-data' } },
         })
