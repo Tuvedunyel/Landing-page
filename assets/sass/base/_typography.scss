@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'CANormal';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''), url('../fonts/CANormal-Light.otf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'CANormal';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/CANormal-Regular.otf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'CANormal';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('../fonts/CANormal-Medium.otf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'CANormal';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/CANormal-Bold.otf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'CANormal';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''), url('../fonts/CANormal-Heavy.otf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'CANormal';
+  font-style: italic;
+  font-weight: 800;
+  src: local(''), url('../fonts/CANormal-HeavyItalic.otf') format('truetype'); /* Safari, Android, iOS */
+}
