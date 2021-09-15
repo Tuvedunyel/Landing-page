@@ -1,0 +1,40 @@
+@use '../abstract' as var;
+
+.border header {
+  background: hsl(var.$jaune);
+  padding: 2.6rem 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.2rem;
+  margin-inline: 3.2rem;
+
+  a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: var.$medium;
+  }
+}
+
+.mentions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 7.9rem;
+  width: 75%;
+  margin-inline: auto;
+  h1 {
+    font-size: 4.9rem;
+    font-style: normal;
+    font-weight: var.$medium;
+    transform: rotate(0deg);
+    text-align: center;
+    margin-bottom: 6.8rem;
+  }
+}
+
+.divider {
+  display: block;
+  margin-block: 2.3rem;
+}

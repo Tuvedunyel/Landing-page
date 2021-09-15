@@ -1,7 +1,7 @@
 @use 'base';
 @use 'abstract' as var;
 @use 'layout';
-
+@use 'components';
 body {
   font-family: var.$canormal;
   font-weight: var.$regular;

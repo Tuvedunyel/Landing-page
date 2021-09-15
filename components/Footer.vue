@@ -1,6 +1,8 @@
 <template>
   <footer>
-    <p>Btg Communication - <a href="#">Mentions légales</a></p>
+    <p>
+      Btg Communication - <nuxt-link to="mentions">Mentions légales</nuxt-link>
+    </p>
   </footer>
 </template>
 <script>
