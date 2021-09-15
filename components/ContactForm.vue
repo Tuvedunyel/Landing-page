@@ -51,7 +51,7 @@
         la fin des relations contractuelles. Conformément à la loi «
         informatique et libertés », vous pouvez exercer votre droit d’accès aux
         données vous concernant et les faire rectifier en nous contactant via :
-        <a href="mailto:contact@btg-communication.fr"
+        <a class="nostyle" href="mailto:contact@btg-communication.fr"
           >contact@btg-communication.fr</a
         ><br />
         Plus d’informations sur notre
