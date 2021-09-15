@@ -3,7 +3,7 @@
     <h2 class="contact-title">
       Alors,<br /><span class="bold">On prend RDV ?</span>
     </h2>
-    <form id="audit" @submit="checkForm">
+    <form v-if="!sent" id="audit" @submit="checkForm">
       <label for="nom"
         ><span class="screen-reader-text">Votre nom* ... </span>
         <input
@@ -64,6 +64,10 @@
         aria-label="Envoyer ma demande d'audit à BTG communication"
       />
     </form>
+    <section v-else class="success">
+      <h2>Merci pour votre message</h2>
+      <p>Nous reviendrons vers vous le plus rapidement possible.</p>
+    </section>
     <section class="afterform">
       <p>
         À l'issue de cet audit vous aurez eu l'occasion de mieux nous connaitre

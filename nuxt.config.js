@@ -8,6 +8,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'description',
+        content:
+          "Profitez d'un audit de communication offert et sans engagement afin d'améliorer la communication de votre entreprise ou de votre projet. Nos experts analyseront et vous proposeront des solutions adaptées à vos besoins.",
+      },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
