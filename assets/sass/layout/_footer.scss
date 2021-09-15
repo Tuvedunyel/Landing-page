@@ -1,0 +1,16 @@
+@use '../abstract' as var;
+
+footer {
+  width: fit-content;
+  width: -moz-fit-content;
+  margin-inline: auto;
+  margin-block: 1rem;
+
+  p,
+  a {
+    font-size: 1.6rem;
+    font-weight: var.$light;
+    color: black;
+    text-decoration: none;
+  }
+}

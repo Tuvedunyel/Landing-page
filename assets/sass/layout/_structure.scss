@@ -173,3 +173,16 @@
     }
   }
 }
+
+.valeur.etiquette {
+  font-weight: var.$medium;
+  .barre {
+    font-weight: var.$bold;
+    text-decoration: line-through;
+    text-decoration-color: hsl(var.$jaune);
+  }
+
+  .indice {
+    font-size: 1.9rem;
+  }
+}

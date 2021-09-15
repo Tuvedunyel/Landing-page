@@ -24,7 +24,7 @@
           <li><span class="white">100%</span> offert</li>
           <li><span class="white">Sans</span> engagement</li>
         </ul>
-        <h3 class="etiquette">
+        <h3 class="etiquette valeur">
           Valeur: <span class="barre">800€</span> <span class="indice">ht</span>
         </h3>
       </div>

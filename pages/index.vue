@@ -4,6 +4,7 @@
     <ExpertAudit />
     <Structure />
     <ContactForm />
+    <Footer />
   </div>
 </template>
 
