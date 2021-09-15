@@ -1,2 +1,9 @@
 @use 'base';
 @use 'abstract' as var;
+@use 'layout';
+
+body {
+  font-family: var.$canormal;
+  font-weight: var.$regular;
+  font-size: 2.2rem;
+}

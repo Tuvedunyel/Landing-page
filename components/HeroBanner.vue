@@ -1,9 +1,28 @@
 <template>
   <header>
     <div class="container">
-      <img src="../static/img/logo.svg" alt="Btg communication" class="logo" />
-      <h1>Coucou</h1>
-      <p>test</p>
+      <img
+        src="../static/img/logo.svg"
+        alt="Logo de BTG Communication"
+        class="logo"
+      />
+      <div class="title-container">
+        <h1>Vous souhaitez faire un point sur vos actions</h1>
+        <h1>Et améliorer votre communication ?</h1>
+        <ul class="competences">
+          <li>Stratégie</li>
+          <li>Marketing</li>
+          <li>Positionnement</li>
+          <li>Identité</li>
+          <li>Print</li>
+          <li>Web</li>
+          <li>Vidéo</li>
+        </ul>
+        <a href="#audit"
+          >Programmer mon audit <span class="yellow">offert</span></a
+        >
+        <p>Valeur : 800€ ht</p>
+      </div>
     </div>
   </header>
 </template>
