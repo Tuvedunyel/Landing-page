@@ -1,5 +1,5 @@
 <template>
-  <div class="content container">
+  <div class="container-narrow">
     <section class="hero-banner">
       <h2>
         Nos experts vous proposent un

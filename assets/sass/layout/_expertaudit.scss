@@ -1,7 +1,31 @@
 @use '../abstract' as var;
 
-.content.container {
+.container-narrow {
   background: none;
+  width: min(85%, 1600px);
+  margin-inline: auto;
+  margin-top: 7.1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: url(../../static/img/start.svg);
+    position: absolute;
+    top: -5em;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-inline: auto;
+  }
+
+  a {
+    width: fit-content;
+    width: -moz-fit-content;
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
 
 h2 {
@@ -20,6 +44,7 @@ h2 {
 
 section.hero-banner {
   p {
+    text-align: center;
     font-size: 2.6rem;
     &:first-of-type {
       margin-top: 1.172rem;
@@ -28,16 +53,93 @@ section.hero-banner {
 }
 
 .parcours {
+  background: hsl(var.$grey-400);
+  padding: 3.6rem 4rem;
+  margin-top: 5.8rem;
   ul {
     display: flex;
     align-items: center;
     font-size: 3.5rem;
     font-weight: var.$heavy;
     font-style: italic;
+    justify-content: center;
+
+    @media screen and (max-width: 1785px) {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 1589px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 1224px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      row-gap: 1.5rem;
+    }
+    @media screen and (max-width: 878px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 747px) {
+      grid-template-columns: 1fr;
+      row-gap: 0;
+    }
+
+    li {
+      width: fit-content;
+      width: -moz-fit-content;
+      @media screen and (max-width: 1224px) {
+        justify-self: center;
+      }
+      @media screen and (max-width: 747px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     li:not(:last-of-type)::after {
       content: url(../../static/img/yellow-arrow.svg);
       margin-inline: 3.4rem;
       margin-block: auto;
+
+      @media screen and (max-width: 1394px) {
+        margin-inline: 2rem;
+      }
+      @media screen and (max-width: 1295px) {
+        margin-inline: 1rem;
+      }
+      @media screen and (max-width: 1224px) {
+        display: none;
+      }
+      @media screen and (max-width: 747px) {
+        display: block;
+        margin-block: 2.2rem;
+        transform: rotate(90deg);
+      }
     }
   }
+}
+
+.article {
+  margin-top: 7.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3.1rem;
+  column-gap: 5.1rem;
+  font-size: 2.2rem;
+
+  @media screen and (max-width: 650px) {
+    grid-template-columns: 1fr;
+    margin-top: 3.3rem;
+  }
+  p {
+    font-weight: var.$light;
+    line-height: 1.3;
+  }
+}
+
+h3 {
+  font-size: 3.4rem;
+  font-weight: var.$heavy;
 }

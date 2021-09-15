@@ -2,6 +2,7 @@
   <div>
     <HeroBanner />
     <ExpertAudit />
+    <Structure />
   </div>
 </template>
 
