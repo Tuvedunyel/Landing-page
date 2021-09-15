@@ -1,5 +1,8 @@
 <template>
-  <HeroBanner />
+  <div>
+    <HeroBanner />
+    <ExpertAudit />
+  </div>
 </template>
 
 <script>

@@ -1,0 +1,43 @@
+@use '../abstract' as var;
+
+.content.container {
+  background: none;
+}
+
+h2 {
+  font-weight: var.$medium;
+  font-size: 4.9rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.bold {
+  color: black;
+  font-weight: var.$heavy;
+  font-style: italic;
+}
+
+section.hero-banner {
+  p {
+    font-size: 2.6rem;
+    &:first-of-type {
+      margin-top: 1.172rem;
+    }
+  }
+}
+
+.parcours {
+  ul {
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: var.$heavy;
+    font-style: italic;
+    li:not(:last-of-type)::after {
+      content: url(../../static/img/yellow-arrow.svg);
+      margin-inline: 3.4rem;
+      margin-block: auto;
+    }
+  }
+}

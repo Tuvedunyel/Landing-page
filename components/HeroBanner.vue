@@ -29,7 +29,7 @@
           <li>Vidéo</li>
         </ul>
       </div>
-      <a href="#audit"
+      <a class="audit" href="#audit"
         >Programmer mon audit <span class="yellow">offert</span></a
       >
       <p>Valeur : 800€ ht</p>
@@ -38,5 +38,7 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'HeroBanner',
+}
 </script>

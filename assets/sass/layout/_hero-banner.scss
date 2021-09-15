@@ -125,28 +125,28 @@ h1 {
   }
 }
 
-header {
-  a {
-    background: black;
-    color: white;
-    font-size: 3rem;
-    font-weight: var.$heavy;
-    font-style: italic;
-    margin-top: 6rem;
-    margin-bottom: 4.1rem;
-    background: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 2rem 3.6rem;
-    border-radius: 40px;
-    @media screen and (max-width: 572px) {
-      font-size: 2.6rem;
-    }
-    @media screen and (max-width: 516px) {
-      font-size: 2.3rem;
-    }
+.audit {
+  background: black;
+  color: white;
+  font-size: 3rem;
+  font-weight: var.$heavy;
+  font-style: italic;
+  margin-top: 6rem;
+  margin-bottom: 4.1rem;
+  background: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem 3.6rem;
+  border-radius: 40px;
+  @media screen and (max-width: 572px) {
+    font-size: 2.6rem;
   }
+  @media screen and (max-width: 516px) {
+    font-size: 2.3rem;
+  }
+}
 
+header {
   p {
     font-size: 2.4rem;
     font-weight: var.$medium;
@@ -155,4 +155,6 @@ header {
 
 .yellow {
   color: hsl(var.$jaune);
+  font-weight: var.$heavy;
+  font-style: italic;
 }
