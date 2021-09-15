@@ -3,6 +3,7 @@
     <HeroBanner />
     <ExpertAudit />
     <Structure />
+    <ContactForm />
   </div>
 </template>
 
