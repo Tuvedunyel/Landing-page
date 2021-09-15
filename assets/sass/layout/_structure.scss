@@ -1,0 +1,89 @@
+@use '../abstract' as var;
+
+.no-start.container-narrow::before {
+  display: none;
+}
+
+.offrons {
+  position: relative;
+  margin-inline: auto;
+  margin-top: 7.8rem;
+  max-width: 60%;
+  background: hsl(var.$jaune);
+  display: flex;
+  padding: 4.3rem 10rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .left-image,
+  .right-image {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+  }
+  .left-image {
+    left: -14.3em;
+  }
+
+  .right-image {
+    right: -14.3em;
+  }
+}
+
+.offre {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.8rem;
+
+  li {
+    font-size: 3rem;
+    font-weight: var.$bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: url(../../static/img/star-little.svg);
+      margin-right: 2rem;
+      line-height: 0;
+    }
+  }
+}
+
+.white {
+  font-weight: var.$heavy;
+  color: white;
+}
+
+.etiquette {
+  position: absolute;
+  background: black;
+  color: white;
+  font-weight: var.$medium;
+  font-size: 3.3rem;
+  transform: rotate(355deg);
+  padding: 1.5rem 1.3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:first-of-type {
+    top: -7%;
+    left: -14%;
+  }
+  &:last-of-type {
+    bottom: -7;
+    right: -14%;
+  }
+}
+
+.partenaires {
+  margin-top: 14.9rem;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.6rem !important;
+  }
+}
