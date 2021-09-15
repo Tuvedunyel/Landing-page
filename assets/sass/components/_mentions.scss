@@ -9,6 +9,11 @@
   margin-top: 3.2rem;
   margin-inline: 3.2rem;
 
+  @media screen and (max-width: 383px) {
+    flex-direction: column-reverse;
+    gap: 1em;
+  }
+
   a {
     color: black;
     text-transform: uppercase;

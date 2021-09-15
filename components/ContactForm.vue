@@ -55,7 +55,7 @@
           >contact@btg-communication.fr</a
         ><br />
         Plus d’informations sur notre
-        <a href="#">politique de confidentialité.</a>
+        <nuxt-link to="politique">politique de confidentialité.</nuxt-link>
       </label>
       <input
         class="submit"
