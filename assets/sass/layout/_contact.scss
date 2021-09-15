@@ -1,0 +1,72 @@
+@use '../abstract' as var;
+
+.contact-title {
+  font-size: 4.9rem;
+  text-transform: uppercase;
+  margin-bottom: 3.4rem;
+
+  .bold {
+    font-size: 6.9rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6rem;
+  max-width: 33%;
+  margin-bottom: 9.4rem;
+}
+
+label {
+  display: inline;
+  font-size: 1.3rem;
+  width: 100%;
+
+  input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 27px;
+    font-size: 30px;
+    font-weight: var.$heavy;
+    font-style: italic;
+    padding-inline: 2rem;
+
+    &::placeholder {
+      color: hsl(var.$jaune);
+    }
+
+    accent-color: hsl(var.$violet);
+  }
+}
+
+.consent {
+  width: fit-content;
+  input {
+    width: fit-content;
+  }
+}
+
+.submit {
+  font-size: 3rem;
+  font-weight: var.$heavy;
+  font-style: italic;
+  padding: 0.7rem 8.4rem;
+  text-transform: uppercase;
+  background: hsl(var.$grey-500);
+  border-radius: 27px;
+  border: none;
+}
+
+.afterform {
+  background: white;
+  box-shadow: -15px 15px 0px black;
+  font-size: 3.2rem;
+  font-weight: var.$light;
+  padding: 2rem;
+  transform: rotate(-3deg);
+  max-width: 52%;
+  text-align: center;
+}

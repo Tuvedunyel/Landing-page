@@ -1,26 +1,43 @@
 <template>
   <div class="container">
-    <h2>Alors,<br />On prend RDV ?</h2>
-    <form @submit="checkForm">
+    <h2 class="contact-title">
+      Alors,<br /><span class="bold">On prend RDV ?</span>
+    </h2>
+    <form id="audit" @submit="checkForm">
       <label for="nom"
-        >Votre nom* ...
-        <input v-model="nom" type="text" name="nom" id="nom" required />
+        ><span class="screen-reader-text">Votre nom* ... </span>
+        <input
+          v-model="nom"
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="Votre nom* ..."
+          required
+        />
       </label>
       <label for="prenom">
-        Votre prénom* ...
+        <span class="screen-reader-text">Votre prénom* ... </span>
         <input
           v-model="prenom"
           type="text"
           name="prenom"
           id="prenom"
+          placeholder="Votre prenom* ..."
           required
         />
       </label>
       <label for="email">
-        Votre email* ...
-        <input v-model="email" type="email" name="email" id="email" required />
+        <span class="screen-reader-text">Votre email* ... </span>
+        <input
+          v-model="email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Votre email* ..."
+          required
+        />
       </label>
-      <label for="consent">
+      <label class="consent" for="consent">
         <input
           v-model="consent"
           type="checkbox"
@@ -36,10 +53,12 @@
         données vous concernant et les faire rectifier en nous contactant via :
         <a href="mailto:contact@btg-communication.fr"
           >contact@btg-communication.fr</a
-        >
-        Plus d’informations sur notre politique de confidentialité.
+        ><br />
+        Plus d’informations sur notre
+        <a href="#">politique de confidentialité.</a>
       </label>
       <input
+        class="submit"
         type="submit"
         value="Envoyer ma demande d'audit"
         aria-label="Envoyer ma demande d'audit à BTG communication"
@@ -71,7 +90,6 @@ export default {
       email: null,
       consent: false,
       sent: false,
-      key: '6LcxmdgUAAAAAJBTLo4dFvRVh1wpxcBxJJqWjixH',
     }
   },
   methods: {
@@ -102,17 +120,22 @@ export default {
         bodyFormData.set('nom', this.nom)
         bodyFormData.set('prenom', this.prenom)
         bodyFormData.set('email', this.email)
+        bodyFormData.set('consent', this.consent)
         bodyFormData.set('sitekye', this.key)
 
         axios({
           method: 'post',
-          url: 'http://btg-communication.local//wp-json/contact-form-7/v1/contact-forms/1460/feedback',
+          url: 'http://btg-communication.local/wp-json/contact-form-7/v1/contact-forms/1460/feedback',
           data: bodyFormData,
           config: { headers: { 'Content-Type': 'multipart/form-data' } },
         })
           .then((response) => {
             console.log(response)
             this.sent = true
+            this.nom = null
+            this.prenom = null
+            this.email = null
+            this.consent = false
             return true
           })
           .catch((error) => console.log(error))
